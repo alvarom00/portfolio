@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { HashLink } from "react-router-hash-link";
 
 const navItems = [
   { key: "home", href: "#hero" },
@@ -35,13 +36,13 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between">
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
+            <HashLink
+              smooth
+              to={item.href}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {t("navbar." + item.key)}
-            </a>
+            </HashLink>
           ))}
         </div>
 
@@ -74,14 +75,13 @@ export const Navbar = () => {
 
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
+              <HashLink
+                smooth
+                to={item.href}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
               >
                 {t("navbar." + item.key)}
-              </a>
+              </HashLink>
             ))}
           </div>
         </div>
