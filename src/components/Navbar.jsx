@@ -3,6 +3,7 @@ import { cn } from "../lib/utils";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { HashLink } from "react-router-hash-link";
+import { createPortal } from "react-dom";
 
 const navItems = [
   { key: "home", href: "#hero" },
@@ -26,6 +27,18 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   return (
     <nav
       className={cn(
@@ -35,10 +48,12 @@ export const Navbar = () => {
     >
       <div className="container flex items-center justify-between">
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item, key) => (
+          {navItems.map((item) => (
             <HashLink
+              key={item.key}
               smooth
               to={item.href}
+              onClick={() => setIsMenuOpen(false)}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {t("navbar." + item.key)}
@@ -56,35 +71,48 @@ export const Navbar = () => {
           </button>
         )}
 
-        <div
-          className={cn(
-            "fixed top-0 left-0 w-screen h-screen bg-background/95 backdrop-blur-md z-50 flex flex-col items-center justify-center",
-            "transition-all duration-300 md:hidden",
-            isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          )}
-        >
-          <button
-            onClick={() => setIsMenuOpen(false)}
-            className="absolute top-5 left-5 p-2 text-foreground"
-            aria-label="Close Menu"
-          >
-            <X size={24} />
-          </button>
+        {createPortal(
+          <>
+            {/* Fondo de blur, sin transición */}
+            {isMenuOpen && (
+              <div className="fixed inset-0 z-40 bg-background/60 backdrop-blur-lg" />
+            )}
 
-          <div className="flex flex-col space-y-8 text-xl">
-            {navItems.map((item, key) => (
-              <HashLink
-                smooth
-                to={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+            {/* Contenido del menú con animación */}
+            <div
+              className={cn(
+                "fixed top-0 left-0 w-screen h-screen z-50 md:hidden flex items-center justify-center",
+                "transition-opacity duration-300",
+                isMenuOpen
+                  ? "opacity-100 pointer-events-auto"
+                  : "opacity-0 pointer-events-none"
+              )}
+            >
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="absolute top-5 left-5 p-2 text-foreground"
+                aria-label="Close Menu"
               >
-                {t("navbar." + item.key)}
-              </HashLink>
-            ))}
-          </div>
-        </div>
+                <X size={24} />
+              </button>
+
+              <div className="flex flex-col space-y-8 text-xl z-10">
+                {navItems.map((item, key) => (
+                  <HashLink
+                    key={key}
+                    smooth
+                    to={item.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    {t("navbar." + item.key)}
+                  </HashLink>
+                ))}
+              </div>
+            </div>
+          </>,
+          document.body
+        )}
       </div>
     </nav>
   );

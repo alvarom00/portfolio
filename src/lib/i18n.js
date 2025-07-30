@@ -98,8 +98,8 @@ const resources = {
         cardTitle2: "Diseño UI/UX e Interacción",
         cardTitle3: "Desarrollo de Juegos y Sistemas en Tiempo Real",
         cardBody1: "Construyendo aplicaciones web responsivas, sistemas backend escalables y aplicaciones inmersivas en tiempo real utilizando tecnologías modernas.",
-        cardBody2: "Creando interfaces amigables para el usuario y interacciones atractivas que mejoran la experiencia general del usuario.",
-        cardBody3: "Creando experiencias inmersivas utilizando Unreal Engine, combinando sistemas C++ y Blueprint para construir jugabilidad responsiva, comportamientos de IA y entornos interactivos.",
+        cardBody2: "Creando interfaces amigables para el usuario e interacciones atractivas que mejoran la experiencia general.",
+        cardBody3: "Creando experiencias inmersivas utilizando Unreal Engine, combinando clases C++ y Blueprints para obtener jugabilidad responsiva, comportamientos de IA y entornos interactivos.",
       },
       skills: {
         title1: "Mis",

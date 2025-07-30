@@ -16,9 +16,8 @@ export const Home = () => {
             <ThemeToggle />
             <LanguageToggle />
             <StarBackground />
-            <Navbar />
 
-            <main>
+            <main className="relative z-0 bg-background/80">
                 <HeroSection />
                 <AboutSection />
                 <SkillsSection />
