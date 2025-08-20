@@ -9,6 +9,7 @@ import { Footer } from "../components/Footer";
 import { ResumeSection } from "../components/ResumeSection";
 import '../lib/i18n';
 import { LanguageToggle } from "../components/LanguageToggle";
+import { ProjectsSection } from "../components/ProjectsSection";
 
 export const Home = () => {
     return (
@@ -21,6 +22,7 @@ export const Home = () => {
                 <HeroSection />
                 <AboutSection />
                 <SkillsSection />
+                <ProjectsSection />
                 <ResumeSection />
                 <ContactSection />
             </main>
