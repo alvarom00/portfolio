@@ -7,7 +7,7 @@ const resources = {
       hero: {
         greeting: "Hi, I'm",
         description:
-          "Full-Stack Web Developer & Unreal Engine Developer crafting immersive digital experiences — from dynamic web apps to real-time 3D worlds.",
+          "Full-Stack Web Developer crafting immersive digital experiences — from dynamic web apps to interactive platforms.",
         scroll: "Scroll",
       },
       navbar: {
@@ -21,21 +21,21 @@ const resources = {
       about: {
         title1: "About",
         title2: "Me",
-        title3: "Passionate Web & Game Developer",
+        title3: "Passionate Web Developer",
         body1:
-          "I'm a Full-Stack Web Developer and Unreal Engine Developer with a passion for creating immersive digital experiences. My journey in web development began with a fascination for crafting dynamic web applications, and it has since evolved into a love for building real-time 3D worlds.",
+          "I'm a Full-Stack Web Developer with a passion for creating immersive digital experiences. My journey in web development began with a fascination for crafting dynamic web applications, and it has since evolved into a love for building interactive platforms.",
         body2:
           "With a strong foundation in both front-end and back-end technologies, I thrive on the challenge of bringing ideas to life through code. Whether it's designing intuitive user interfaces or optimizing server-side performance, I approach each project with creativity and dedication.",
         button: "Contact Me",
         cardTitle1: "Software Development",
         cardTitle2: "UI/UX & Interaction Design",
-        cardTitle3: "Game Development & Real-Time Systems",
+        cardTitle3: "Real-Time Systems",
         cardBody1:
-          "Building responsive web apps, scalable backend systems, and immersive real-time applications using modern technologies.",
+          "Building responsive web apps, scalable backend systems, and immersive interactive applications using modern technologies.",
         cardBody2:
           "Crafting user-friendly interfaces and engaging interactions that enhance the overall user experience.",
         cardBody3:
-          "Creating immersive experiences using Unreal Engine, combining C++ and Blueprint systems to build responsive gameplay, AI behaviors, and interactive environments.",
+          "Designing and implementing real-time systems that power responsive, efficient, and engaging applications.",
       },
       skills: {
         title1: "My",
@@ -95,7 +95,7 @@ const resources = {
       hero: {
         greeting: "Hola, soy",
         description:
-          "Desarrollador Web Full-Stack y Desarrollador de Unreal Engine creando experiencias digitales inmersivas — desde aplicaciones web dinámicas hasta mundos 3D en tiempo real.",
+          "Desarrollador Web Full-Stack creando experiencias digitales inmersivas — desde aplicaciones web dinámicas hasta plataformas interactivas.",
         scroll: "Desplázate",
       },
       navbar: {
@@ -109,21 +109,21 @@ const resources = {
       about: {
         title1: "Sobre",
         title2: "Mí",
-        title3: "Desarrollador Web y de Juegos Apasionado",
+        title3: "Desarrollador Web Apasionado",
         body1:
-          "Soy un Desarrollador Web Full-Stack y Desarrollador de Unreal Engine con una pasión por crear experiencias digitales inmersivas. Mi viaje en el desarrollo web comenzó con una fascinación por crear aplicaciones web dinámicas, y desde entonces ha evolucionado hacia un amor por construir mundos 3D en tiempo real.",
+          "Soy un Desarrollador Web Full-Stack con una pasión por crear experiencias digitales inmersivas. Mi viaje en el desarrollo web comenzó con una fascinación por crear aplicaciones web dinámicas, y desde entonces ha evolucionado hacia un amor por construir plataformas interactivas.",
         body2:
           "Con una sólida base en tecnologías tanto de front-end como de back-end, disfruto del desafío de dar vida a las ideas a través del código. Ya sea diseñando interfaces de usuario intuitivas o optimizando el rendimiento del servidor, abordo cada proyecto con creatividad y dedicación.",
         button: "Contáctame",
         cardTitle1: "Desarrollo de Software",
         cardTitle2: "Diseño UI/UX e Interacción",
-        cardTitle3: "Desarrollo de Juegos y Sistemas en Tiempo Real",
+        cardTitle3: "Sistemas en Tiempo Real",
         cardBody1:
-          "Construyendo aplicaciones web responsivas, sistemas backend escalables y aplicaciones inmersivas en tiempo real utilizando tecnologías modernas.",
+          "Construyendo aplicaciones web responsivas, sistemas backend escalables y aplicaciones interactivas en tiempo real utilizando tecnologías modernas.",
         cardBody2:
           "Creando interfaces amigables para el usuario e interacciones atractivas que mejoran la experiencia general.",
         cardBody3:
-          "Creando experiencias inmersivas utilizando Unreal Engine, combinando clases C++ y Blueprints para obtener jugabilidad responsiva, comportamientos de IA y entornos interactivos.",
+          "Diseñando e implementando sistemas en tiempo real que permiten aplicaciones responsivas, eficientes y atractivas.",
       },
       skills: {
         title1: "Mis",
