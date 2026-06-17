@@ -54,6 +54,10 @@ const resources = {
           description:
             "Website for capturing and selling rural fields with catalog, gallery with lightbox and swipe on mobile, interactive map, and admin panel (CRUD, validations, and image/video upload).",
         },
+        cgx: {
+          description:
+            "Corporate website for CGX International, featuring a clean design, responsive layout, and interactive elements to showcase their services and projects.",
+        }
       },
       resume: {
         title1: "My",
@@ -142,6 +146,10 @@ const resources = {
           description:
             "Sitio para captar y vender campos rurales con catálogo, galería con lightbox y swipe en mobile, mapa interactivo, y panel de administración (CRUD, validaciones y carga de imágenes/videos)."
         },
+        cgx: {
+          description:
+            "Sitio corporativo para CGX International, con un diseño limpio, diseño responsivo y elementos interactivos para mostrar sus servicios y proyectos."
+        }
       },
       resume: {
         title1: "Mi",

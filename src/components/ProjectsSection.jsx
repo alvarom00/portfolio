@@ -2,6 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import barrientosImg from "../assets/projects/barrientos.png";
+import cgxImg from "../assets/projects/cgx.png";
 
 export const ProjectsSection = () => {
   const { t, i18n } = useTranslation();
@@ -16,6 +17,15 @@ export const ProjectsSection = () => {
         tags: ["React (TypeScript)", "Tailwind CSS", "Node.js", "MongoDB"],
         demoUrl: "https://camposbarrientos.com",
         githubUrl: "https://github.com/alvarom00/barrientos-frontend",
+      },
+      {
+        id: 2,
+        title: "CGX International",
+        description: t("projects.cgx.description"),
+        image: cgxImg,
+        tags: ["React (TypeScript)", "Tailwind CSS", "Node.js", "Express"],
+        demoUrl: "https://cgxinternational.com",
+        githubUrl: "https://github.com/alvarom00/cgx-frontend",
       },
     ],
     [t, i18n.language]
